@@ -1,0 +1,524 @@
+.header
+  position: relative
+  height: 50px
+  &__nav
+    position: fixed
+    width: 100%
+    height: 50px
+    background-color: #212121
+    z-index: 5
+  &__menu
+    display: flex
+    justify-content: space-between
+    margin: 0
+    padding: 13px 70px
+    list-style: none
+    &__item
+      padding-right: 28px
+      border-right: 2px dotted black
+      &:last-child
+        border: none
+      &__link
+        font-size: 15px
+        font-weight: 300
+        color: #ffffff
+  &__hamburger
+    display: none
+
+.subheader
+  position: absolute
+  width: 100%
+  top: 50px
+  height: 84px
+  background-color: rgba(0, 0, 0, 0.6)
+  &__logo
+    display: block
+    max-width: 100%
+    margin-top: 16px
+    &__official
+      margin-top: 6px
+      font-size: 13px
+      font-weight: 400
+      opacity: 0.5
+      color: #ffffff
+  &__call
+    margin-top: 19px
+    font-size: 12px
+    font-weight: 300
+    text-align: right
+    color: #ffffff
+  &__phone
+    display: block
+    margin-top: 8px
+    font-size: 22px
+    line-height: 12px
+    font-weight: 400
+    text-transform: uppercase
+    text-align: right
+    color: #ffffff
+  &__btn
+    margin-top: 19px
+    width: 172px
+    height: 46px
+    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12)
+    border: none
+    border-radius: 4px
+    background-image: linear-gradient(to top, $main-color 0%, #4ce2ff 100%)
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
+    font-size: 14px
+    font-weight: 400
+    text-transform: uppercase
+    color: #ffffff
+    @include btn__hover
+  
+
+
+.promo
+  min-height: 800px
+  padding: 150px 0 135px 0
+  background: url('../img/header-logo.jpg') center (center / cover) no-repeat
+  &__title
+    margin: 0
+    font-size: 60px
+    line-height: 60px
+    font-weight: 700
+    text-transform: uppercase
+    text-align: center
+    color: #ffffff
+  &__subtitle
+    margin: 22px 0 0 0
+    font-size: 36px
+    line-height: 36px
+    font-weight: 700
+    text-transform: uppercase
+    text-align: center
+    color: #ffffff
+  &__descr
+    margin-top: 23px
+    font-size: 18px
+    font-weight: 400
+    line-height: 24px
+    text-align: center
+    color: #ffffff
+  &__btn
+    display: block
+    margin: 118px auto 0 auto
+    width: 259px
+    height: 63px
+    box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12)
+    border: none
+    border-radius: 4px
+    background-image: linear-gradient(to top, $main-color 0%, #4ce2ff 100%)
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
+    font-size: 18px
+    font-weight: 400
+    text-transform: uppercase
+    color: #ffffff
+    @include btn__hover
+
+
+
+.label
+  position: relative
+  width: 112px
+  height: 24px
+  margin: 0 auto
+  padding: 5px 12px
+  background-color: #000000
+  font-size: 11px
+  font-weight: 300
+  text-transform: uppercase
+  text-align: center
+  color: #ffffff
+  z-index: 2
+  &__white 
+    background-color: #fff
+    color: #000
+
+.title
+  position: relative
+  margin: 28px 0 0 0
+  font-size: 38px
+  line-height: 38px
+  font-weight: 700
+  text-transform: uppercase
+  text-align: center
+  color: #222222
+  z-index: 2
+  &__white 
+    color: #fff
+
+.subtitle 
+  position: relative
+  margin-top: 9px
+  font-size: 17px
+  font-weight: 400
+  text-align: center
+  color: #222222
+  z-index: 2
+  &__white 
+    color: #fff
+
+.advantages
+  padding: 71px 0 65px 0
+  .col-sm-6:nth-child(1) .advantages__item__icon::before
+    width: 80px
+    height: 66px
+    top: 25px 
+    background-image: url('../img/icons/icon1.png')
+  .col-sm-6:nth-child(2) .advantages__item__icon::before
+    width: 64px
+    height: 69px
+    top: 24px 
+    background-image: url('../img/icons/icon2.png')
+  .col-sm-6:nth-child(3) .advantages__item__icon::before
+    width: 83px
+    height: 53px
+    top: 31px 
+    left: 60px
+    background-image: url('../img/icons/icon3.png')
+  .col-sm-6:nth-child(4) .advantages__item__icon::before
+    width: 79px
+    height: 73px
+    top: 19px 
+    background-image: url('../img/icons/icon4.png')
+  .col-sm-6:nth-child(5) .advantages__item__icon::before
+    width: 54px
+    height: 78px
+    top: 19px 
+    background-image: url('../img/icons/icon5.png')
+  .col-sm-6:nth-child(6) .advantages__item__icon::before
+    width: 63px
+    height: 67px
+    top: 23px 
+    background-image: url('../img/icons/icon6.png')
+  .col-sm-6:nth-child(7) .advantages__item__icon::before
+    width: 85px
+    height: 66px
+    top: 20px 
+    background-image: url('../img/icons/icon7.png')
+  .col-sm-6:nth-child(8) .advantages__item__icon::before
+    width: 73px
+    height: 68px
+    top: 22px 
+    left: 55px
+    background-image: url('../img/icons/icon8.png')
+  &__item
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 35px 0 0 0
+    &__icon
+      position: relative
+      width: 113px
+      height: 113px
+      margin-right: 26px
+      background-color: $main-color
+      border-radius: 100%
+      &::before
+        content: ''
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+    &__descr
+      width: 343px
+      h4
+        margin: 0
+        font-size: 17px
+        line-height: 21px
+        font-weight: 400
+        color: $main-color
+      p
+        margin: 0
+        font-size: 15px
+        line-height: 21px
+        font-weight: 300
+        color: #202020
+
+
+
+.mobile
+  min-height: 864px
+  padding: 48px 0 79px 0
+  background: url('../img/uber-mobile__bg.jpg') center (center / cover) no-repeat
+  .row 
+    margin-top: 32px
+    .col-xl-4:nth-child(1) .mobile__item
+      background-image: url('../img/uber-mobile__li1bg.jpg')
+    .col-xl-4:nth-child(2) .mobile__item
+      background-image: url('../img/uber-mobile__li2bg.jpg')
+    .col-xl-4:nth-child(3) .mobile__item
+      background-image: url('../img/uber-mobile__li3bg.jpg')
+    .col-xl-4:nth-child(4) .mobile__item
+      background-image: url('../img/uber-mobile__li4bg.jpg')
+    .col-xl-4:nth-child(5) .mobile__item
+      background-image: url('../img/uber-mobile__li5bg.jpg')
+    .col-xl-4:nth-child(6) .mobile__item
+      background-image: url('../img/uber-mobile__li6bg.jpg')
+  &__item
+    position: relative
+    width: 320px
+    height: 280px
+    margin: 0 auto 19px auto
+    background-position: center center
+    background-size: cover
+    background-repeat: no-repeat
+    &__title
+      margin: 0
+      padding-top: 100px
+      font-size: 24px
+      font-weight: 400
+      line-height: 31px
+      text-transform: uppercase
+      text-align: center
+      color: #ffffff
+    &__plus
+      display: flex 
+      justify-content: center
+      align-items: center
+      position: absolute
+      margin: 0 auto
+      width: 26px
+      height: 26px
+      bottom: 35px
+      left: 50%
+      transform: translateX(-50%)
+      background-color: #000000
+      border-radius: 100%
+      cursor: pointer
+      &:before
+        content: ''
+        display: block
+        width: 14px
+        height: 2px
+        background-color: $main-color
+        transition: 0.3s all
+      &:after
+        content: ''
+        display: block
+        position: absolute
+        width: 2px
+        height: 14px
+        left: 50%
+        transform: translateX(-50%)
+        background-color: $main-color
+        transition: 0.3s all
+      &:hover
+        &:before, &::after
+          background-color: $second-color
+
+
+
+.choice
+  position: relative
+  min-height: 895px
+  padding: 57px 0 138px 0
+  background: url('../img/choicebg.jpg') center (center / cover) no-repeat
+  &__black
+    position: absolute 
+    top: 0
+    left: 0
+    height: 499px
+    width: 100%
+    background-color: #070716
+    z-index: 1
+  &__img
+    display: block
+    position: relative
+    margin: 56px auto 0 auto
+    width: 100%
+    z-index: 2
+  &__descr
+    font-size: 17px
+    font-weight: 300
+    line-height: 24px
+    text-align: center
+    color: #222222
+
+
+
+.require
+  padding: 68px 0 84px 0
+  .col-md-6:nth-child(1), 
+  .col-md-6:nth-child(2) 
+    .require__title
+      margin: 33px 0 10px 0
+      color: #1ca8c3
+    .require__list__item::before
+      background-image: url('../img/icons/bluemark.png')
+  .col-md-6:nth-child(3),
+  .col-md-6:nth-child(4) 
+    .require__title
+      margin: 62px 0 10px 0
+      color: $second-color
+    .require__list__item::before
+      background-image: url('../img/icons/redmark.png')
+  &__title
+    font-size: 22px
+    font-weight: 400
+  &__list
+    margin: 0
+    padding: 0
+    list-style: none
+    &__item
+      position: relative
+      margin-left: 49px
+      font-size: 17px
+      line-height: 29px
+      font-weight: 300
+      &::before
+        content: ''
+        display: block
+        position: absolute
+        width: 21px
+        height: 20px
+        top: 5px
+        left: -32px
+        background-position: center center
+        background-size: cover
+        background-repeat: no-repeat
+  &__descr
+    margin-top: 20px
+    font-weight: 300
+    color: #1ca8c3
+    
+
+
+.map 
+  position: relative
+  padding: 49px 0
+  min-height: 717px
+  background: url('../img/mapbg.jpg') center (center / cover) no-repeat
+  &__link
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    bottom: 49px
+    font-size: 15px
+    font-weight: 400
+    text-transform: uppercase
+    text-align: center
+    color: #1fbad6
+    &:hover
+      text-decoration: none
+      color: #fff
+
+
+
+.footer
+  padding-top: 14px
+  &__blueline
+    width: 299px
+    height: 4px
+    margin: 0 auto
+    background-color: #1fbad6
+  &__wrapper
+    display: flex 
+    justify-content: space-between
+    align-items: flex-start
+    padding-top: 32px
+  &__wrapper > div 
+    width: 33%
+    &:nth-child(3)
+      display: flex 
+      justify-content: flex-end
+  &__social
+    display: flex
+    justify-content: space-between
+    margin: 5px 0 0 19px
+    padding: 0
+    width: 160px
+    list-style: none
+    li
+      display: flex 
+      justify-content: center
+      align-items: center
+      position: relative
+      margin: 0 4px
+      width: 32px
+      height: 32px
+      background-color: #070716
+      border-radius: 100%
+      .footer__social__link
+        background-position: center center
+    li:nth-child(1) .footer__social__link
+      width: 9px
+      height: 18px
+      background-image: url('../img/icons/social-fb.png')
+    li:nth-child(2) .footer__social__link
+      width: 20px
+      height: 15px
+      background-image: url('../img/icons/social-tw.png')
+    li:nth-child(3) .footer__social__link
+      width: 14px
+      height: 14px
+      background-image: url('../img/icons/social-in.png')
+    li:nth-child(4) .footer__social__link
+      width: 14px
+      height: 14px
+      background-image: url('../img/icons/social-inst.png')
+  &__mainmenucontainer
+    width: 390px
+    margin: 0 auto
+  &__menu
+    display: flex 
+    justify-content: space-between
+    margin: 0
+    padding: 0 20px
+    list-style: none
+    &__link
+      font-size: 15px
+      font-weight: 300
+      text-transform: uppercase
+      color: #070716
+      &:hover
+        color: #070716
+  &__submenu
+    display: flex
+    justify-content: space-between
+    margin: 0
+    padding: 0
+    list-style: none
+    &__link
+      margin: 0 5px 
+      font-size: 11px
+      font-weight: 300
+      text-transform: uppercase
+      color: #999999
+      &:hover
+        color:  #999999
+  &__lang
+    display: flex
+    justify-content: center
+    margin: 9px 0 0 0
+    font-size: 11px
+    font-weight: 400
+    text-transform: uppercase
+    color: #1fbad6
+    &:hover
+        color:  #1fbad6
+  &__download
+    display: flex
+    margin: 5px 20px 0 0
+    padding: 0
+    list-style: none
+    li 
+      margin: 0 3px
+      .footer__download__link
+        img 
+          width: 100%
+    
+  &__blackline
+    margin-top: 31px
+    width: 100%
+    height: 8px
+    background-color: #070716
+
+
+
+.xs-visible
+  display: none
+
+
+
+

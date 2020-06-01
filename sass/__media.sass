@@ -1,0 +1,473 @@
+@media (max-width: 1200px) 
+  .header
+    &__menu
+      &__item
+        padding-right: 20px
+        &__link
+          font-size: 13px
+  .promo
+    &__title
+      font-size: 50px
+    &__subtitle
+      font-size: 33px
+  
+  .advantages
+    &__item
+      align-items: flex-start
+      &__descr
+        width: 300px
+  
+  .mobile
+    &__item
+      width: 290px
+      &__title
+        font-size: 22px
+  
+  .choice 
+    padding: 55px 0
+    min-height: 840px
+
+.footer
+  &__wrapper > div 
+    width: 50%
+    &:nth-child(1)
+      width: 25%
+    &:nth-child(3)
+      width: 25%
+      display: flex 
+      justify-content: flex-end
+        
+
+
+@media (max-width: 991px) 
+  .header
+    &__menu
+      &__item
+        padding-right: 8px
+        &__link
+          font-size: 11px
+  .subheader
+    &__logo
+      img
+        width: 100%
+      &__official
+        font-size: 11px
+    &__phone
+      font-size: 18px
+    &__btn
+      margin-top: 21px
+      width: 100%
+      height: 40px
+
+  .promo
+    min-height: 690px
+    padding-bottom: 90px
+    &__title
+      font-size: 40px
+    &__subtitle
+      margin-top: 5px
+      font-size: 30px
+    &__descr
+      margin-top: 33px
+      font-size: 18px
+    &__btn
+      margin-top: 60px
+
+  .title
+    font-size: 28px
+  .advantages
+    padding: 60px 0 55px 0
+    .col-sm-6:nth-child(1) .advantages__item__icon::before
+      top: 20px 
+    .col-sm-6:nth-child(2) .advantages__item__icon::before
+      top: 17px 
+    .col-sm-6:nth-child(3) .advantages__item__icon::before
+      top: 26px 
+      left: 53px
+    .col-sm-6:nth-child(4) .advantages__item__icon::before
+      top: 14px 
+    .col-sm-6:nth-child(5) .advantages__item__icon::before
+      top: 14px 
+    .col-sm-6:nth-child(6) .advantages__item__icon::before
+      top: 18px 
+    .col-sm-6:nth-child(7) .advantages__item__icon::before
+      top: 15px 
+    .col-sm-6:nth-child(8) .advantages__item__icon::before
+      top: 15px 
+      left: 48px
+    &__list
+      margin: 0 auto
+    &__item
+      flex-direction: column
+      align-items: center
+      margin-top: 20px
+      &__icon
+        margin-right: 0
+        width: 100px
+        height: 100px
+      &__descr
+        margin-top: 20px
+        width: 300px
+
+  .mobile
+    min-height: 750px
+    &__item
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      height: 200px
+      &__title
+        padding: 0 10px
+        font-size: 17px
+  
+  .choice
+    padding-bottom: 90px
+    min-height: 800px
+
+  .require
+    padding-bottom: 60px
+    .col-md-6:nth-child(1),
+    .col-md-6:nth-child(2),
+    .col-md-6:nth-child(3),
+    .col-md-6:nth-child(4) 
+      .require__title
+        margin-top: 52px
+    &__list
+      &__item
+        margin-bottom: 8px
+        line-height: 20px
+        &::before
+          top: 2px
+
+  .map
+    padding: 40px 0
+    min-height: 650px
+
+  .footer
+    &__wrapper
+      flex-wrap: wrap
+    &__wrapper > div 
+      width: 100%
+      display: flex 
+      justify-content: center
+      margin-bottom: 20px
+      &:nth-child(1)
+        width: 100%
+      &:nth-child(3)
+        width: 100%
+        justify-content: center
+    &__social
+      margin-left: 0
+    &__download
+      margin-right: 0
+
+
+
+@media (max-width: 767px) 
+  .header
+    &__hamburger
+      display: block
+      position: absolute
+      right: 10px
+      top: 50%
+      transform:  translateY(-50%)
+      width: 26px
+      height: 12px
+      span
+        display: block
+        margin-bottom: 3px
+        width: 100%
+        height: 2px
+        background-color: #fff
+        transition: 0.5s all
+      &__active
+        span
+          margin-bottom: -2px
+          &:nth-child(1)
+            transform: rotate(-45deg)
+          &:nth-child(2)
+            display: none
+          &:nth-child(3)
+            transform: rotate(45deg)
+    &__menu
+      position: fixed
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      top: 0
+      left: -100%
+      width: 50%
+      height: 100vh 
+      padding: 20px 15px
+      background-color: rgba(0,0,0, 0.8)
+      transition: 0.6s all
+      &__active
+        left: 0
+      &__item
+        padding-right: 0
+        border: none
+        margin: 10px 0
+        &__link
+          font-size: 20px
+  .subheader
+    .xs-hidden
+      display: none
+    .xs-visible
+      display: block
+    &__phone
+      display: block
+      margin-top: 13px
+      font-size: 16px
+      font-weight: 400
+      text-transform: uppercase
+      text-align: center
+      color: #ffffff
+    &__btn
+      display: block
+      margin: 7px auto 0 auto
+      width: 190px
+      height: 40px
+
+  .promo
+    &__title
+      font-size: 36px
+      line-height: 45px
+    &__subtitle
+      margin-top: 5px
+      font-size: 28px
+    &__descr
+      margin-top: 33px
+      font-size: 18px
+  
+  .advantages
+    padding: 46px 0 40px 0
+    .col-sm-6:nth-child(1) .advantages__item__icon::before
+      top: 18px 
+    .col-sm-6:nth-child(2) .advantages__item__icon::before
+      top: 17px 
+    .col-sm-6:nth-child(3) .advantages__item__icon::before
+      top: 24px 
+      left: 54px
+    .col-sm-6:nth-child(4) .advantages__item__icon::before
+      top: 12px 
+    .col-sm-6:nth-child(5) .advantages__item__icon::before
+      top: 12px 
+    .col-sm-6:nth-child(6) .advantages__item__icon::before
+      top: 16px 
+    .col-sm-6:nth-child(7) .advantages__item__icon::before
+      top: 13px 
+    .col-sm-6:nth-child(8) .advantages__item__icon::before
+      top: 15px 
+      left: 49px
+    &__item
+      margin-top: 15px
+      &__descr
+        margin-top: 15px
+        width: 240px
+        h4 
+          font-size: 22px
+          line-height: 24px
+          text-align: center
+        p 
+          margin-top: 10px
+          line-height: 20px
+          text-align: center
+  
+  .mobile
+    padding-bottom: 58px
+    &__item
+      width: 230px
+      height: 190px
+      &__title
+        font-size: 18px
+
+  .choice
+    padding-bottom: 60px
+    min-height: 670px
+
+  .require
+    &__title
+      text-align: center
+    &__list
+      &__item
+        &::before
+          top: 0
+  
+  .map
+    min-height: 450px
+
+
+
+@media (max-width: 575px)
+  .header
+    height: 30px
+    &__nav
+      height: 30px
+    &__menu
+      width: 85%
+      &__item 
+        padding: 5px 0
+        width: 100%
+        text-align: center
+        &__link 
+          display: block
+    &__hamburger
+      &__active 
+        span 
+          &:nth-child(1)
+            transform: translateY(5px) rotate(-45deg)
+          &:nth-child(3)
+            transform: translateY(5px) rotate(45deg)
+  .subheader
+    height: 60px
+    top: 30px
+    &__logo
+      margin-top: 16px
+      &__official
+        display: none
+    &__phone
+      margin-top: 11px
+      font-size: 12px
+    &__btn
+      margin-top: 6px
+      width: 110px
+      height: 22px
+      font-size: 10px
+      border: 1px solid $main-color
+      &:hover
+        @include btn__hover
+  
+  .promo
+    min-height: 400px 
+    padding: 93px 0 35px 0
+    &__title
+      padding: 0 24px
+      font-size: 30px
+      line-height: 35px
+    &__subtitle
+      margin-top: 33px
+      padding: 0 10px
+      font-size: 20px
+      line-height: 30px
+    &__descr
+      display: none
+    &__btn
+      margin-top: 72px
+      width: 210px
+      height: 50px
+      font-size: 16px
+    
+  .title
+    margin-top: 15px
+    font-size: 16px
+    line-height: 16px
+  .subtitle 
+		font-size: 14px
+		line-height: 21px
+		margin-top: 11px
+  .advantages
+    padding: 22px 0 36px 0
+    &__item
+      margin-top: 15px
+      &__descr
+        margin-top: 27px
+        width: 100%
+      h4
+        font-size: 16px
+        line-height: 22px
+        font-weight: 400
+  
+  .mobile
+    padding: 20px 0 40px 0
+    .row 
+      margin-top: 30px
+    &__item 
+      width: 250px
+      height: 210px
+      &__title
+        font-size: 18px
+        line-height: 31px
+    &:hover 
+      &:before, &:after 
+        background-color: $main-color
+  
+  .choice
+    padding: 25px 0 33px 0
+    min-height: 390px
+    background: #000
+    &__img 
+      margin-top: 35px
+    &__descr 
+      margin-top: 23px
+      color: #ffffff
+      font-size: 17px
+      font-weight: 300
+      line-height: 24px
+    &__black 
+      display: none 
+  .hidden-320
+    display: none
+
+  .require
+    padding-top: 25px
+    padding-bottom: 25px
+    .col-md-6:nth-child(1),
+    .col-md-6:nth-child(2),
+    .col-md-6:nth-child(3),
+    .col-md-6:nth-child(4) 
+      .require__title
+        margin-top: 30px
+        font-size: 17px
+    &__list
+      &__item
+        font-size: 16px
+  
+  .map
+    min-height: 360px
+    padding: 25px 0 30px 0
+    &__link 
+      width: 200px
+      display: block
+      bottom: 30px
+      line-height: 15px
+  
+  .footer
+    padding: 25px 0 15px 0
+    &__blueline
+      width: 253px
+      margin: 0 auto
+    &__wrapper
+      padding-top: 22px
+    &__wrapper > div 
+      margin-bottom: 20px
+      &:nth-child(1)
+        order: 2
+      &:nth-child(2)
+        order: 1
+      &:nth-child(3)
+        order: 3
+    &__mainmenucontainer
+      width: 290px 
+    &__menu 
+      padding: 0
+      font-size: 14px
+    &__submenu
+      flex-wrap: wrap
+      justify-content: center
+      a 
+        margin: 0 7px
+    &__lang 
+      margin-top: 10px
+
+      
+    
+
+  
+
+  
+
+
+    
+    
+
